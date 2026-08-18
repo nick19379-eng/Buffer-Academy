@@ -377,6 +377,19 @@
       transform: translateY(-3px); /* 滑鼠懸停微幅上浮效果 */
       color: var(--accent-terracotta); /* 懸停時切換成暖陶紅點睛色 */
     }
+.nav-logo {
+  /* 依據導覽列高度調整，通常建議 32px ~ 48px 之間 */
+  height: 40px; 
+  
+  /* 保持寬度自適應，避免圖片變形 */
+  width: auto;  
+  
+  /* 確保圖片置中對齊 */
+  vertical-align: middle; 
+  
+  /* 如果原本圖檔周圍白邊/透明邊留太多，可以稍微推一點距 */
+  margin-right: 8px; 
+}
   </style>
   <!-- Google tag (gtag.js)埋設GA代碼 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHLCMLD0VB"></script>
@@ -419,7 +432,10 @@ src="https://www.facebook.com/tr?id=1747111268917475&ev=PageView&noscript=1"
   <!-- 頂端導覽列 -->
   <header>
     <div class="nav-container">
-      <div class="logo">🌿 緩步學苑</div>
+      <a href="#home" class="logo">
+        <img src="images/緩步學苑logo網站用.png" alt="緩步學苑 Logo" class="nav-logo">
+        <span>緩步學苑</span>
+      </a>
       <nav class="nav-links">
         <a href="#home">首頁</a>
         <a href="#courses">精選課程</a>
@@ -427,7 +443,7 @@ src="https://www.facebook.com/tr?id=1747111268917475&ev=PageView&noscript=1"
         <a href="#courses" class="btn-cta-nav">免費試聽 15m</a>
       </nav>
     </div>
-  </header>
+</header>
 
   <!-- 首頁 / Hero 區塊 -->
   <section id="home">
@@ -534,7 +550,7 @@ src="https://www.facebook.com/tr?id=1747111268917475&ev=PageView&noscript=1"
   <!-- 頁尾 (Footer) -->
   <footer>
     <div class="footer-container">
-      <p>© 2026 緩步學苑 Huan Bu Academy. All rights reserved. 專為數位焦慮族群打造的無壓學習場。</p>
+      <p>© 2026 緩步學苑 Buffer Academy. All rights reserved. 專為數位焦慮族群打造的無壓學習場。</p>
       
       <!-- 社交媒體外連 Icon 區塊 -->
       <div class="social-links">
